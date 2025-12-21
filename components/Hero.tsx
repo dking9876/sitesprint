@@ -34,6 +34,7 @@ export default function Hero() {
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [displayText, setDisplayText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "972XXXXXXXXX";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("היי, אני רוצה אתר מנצח")}`;
@@ -46,11 +47,20 @@ export default function Hero() {
     const smoothMouseX = useSpring(mouseX, { stiffness: 30, damping: 20 });
     const smoothMouseY = useSpring(mouseY, { stiffness: 30, damping: 20 });
 
-    // Initialize particles on mount
+    // Initialize particles on mount and detect mobile
     useEffect(() => {
         setMounted(true);
+        // Detect mobile/touch device
+        const checkMobile = () => {
+            setIsMobile(window.matchMedia('(max-width: 768px)').matches || 'ontouchstart' in window);
+        };
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
+        // Reduce particles on mobile for performance
+        const particleCount = window.innerWidth < 768 ? 20 : PARTICLE_COUNT;
         const newParticles: Particle[] = [];
-        for (let i = 0; i < PARTICLE_COUNT; i++) {
+        for (let i = 0; i < particleCount; i++) {
             newParticles.push({
                 id: i,
                 x: Math.random() * 100,
@@ -61,6 +71,8 @@ export default function Hero() {
             });
         }
         setParticles(newParticles);
+
+        return () => window.removeEventListener('resize', checkMobile);
     }, []);
 
     // Canvas animation for floating particles
@@ -116,9 +128,9 @@ export default function Hero() {
         };
     }, [mounted, particles]);
 
-    // Mouse tracking
+    // Mouse tracking - only on desktop
     useEffect(() => {
-        if (!mounted) return;
+        if (!mounted || isMobile) return;
 
         const handleMouseMove = (e: MouseEvent) => {
             if (containerRef.current) {
@@ -130,7 +142,7 @@ export default function Hero() {
 
         window.addEventListener("mousemove", handleMouseMove);
         return () => window.removeEventListener("mousemove", handleMouseMove);
-    }, [mounted, mouseX, mouseY]);
+    }, [mounted, isMobile, mouseX, mouseY]);
 
     // Typewriter effect
     useEffect(() => {
@@ -214,8 +226,8 @@ export default function Hero() {
                     className="absolute inset-0 z-[1]"
                 />
 
-                {/* Mouse Spotlight */}
-                {mounted && (
+                {/* Mouse Spotlight - Desktop only */}
+                {mounted && !isMobile && (
                     <motion.div
                         className="absolute w-[600px] h-[600px] rounded-full pointer-events-none z-[2]"
                         style={{
