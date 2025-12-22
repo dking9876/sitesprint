@@ -49,17 +49,17 @@ export default function About() {
                         </motion.div>
 
                         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                            מי אנחנו ולמה בחרו בנו?
+                            מי אנחנו
                         </h2>
                         <div className="space-y-6 text-lg text-slate-300 leading-relaxed">
                             <p>
-                                אנחנו צוות של מעצבים ומפתחים שמאמינים שלכל עסק קטן מגיע נוכחות דיגיטלית מנצחת.
+                                בנינו את SiteSprint מתוך מטרה ברורה: להפוך את הטכנולוגיה לנגישה וזמינה לעסקים קטנים במחירים הוגנים ביותר.
                             </p>
                             <p>
-                                במקום אתרים גנריים ויקרים, אנחנו בונים פתרונות מותאמים אישית במהירות שיא ובמחיר הוגן. כל אתר שאנחנו יוצרים בנוי להמיר מבקרים ללקוחות משלמים.
+                                אנחנו משתמשים בידע רחב בקוד ועיצוב בנוסף לכלי AI מתקדמים, בכדי ליצור אתרים מודרניים, מקצועיים שהופכים מבקרים ללקוחות משלמים.
                             </p>
                             <p className="font-semibold text-white text-xl">
-                                הצלחתך היא ההצלחה שלנו. 🎯
+                                הצלחתך היא ההצלחה שלנו.
                             </p>
                         </div>
 
