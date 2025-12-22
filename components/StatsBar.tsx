@@ -37,9 +37,9 @@ function CountUp({ to, duration = 2 }: { to: number; duration?: number }) {
 const stats = [
     {
         icon: CheckCircle,
-        value: 150,
-        suffix: "+",
-        label: "אתרים נבנו בהצלחה",
+        value: 100,
+        suffix: "%",
+        label: "התאמה לנייד",
         color: "from-emerald-400 to-green-600",
     },
     {
@@ -51,7 +51,7 @@ const stats = [
     },
     {
         icon: Heart,
-        value: 98,
+        value: 100,
         suffix: "%",
         label: "שביעות רצון לקוחות",
         color: "from-pink-400 to-rose-600",
