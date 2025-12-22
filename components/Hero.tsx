@@ -5,7 +5,7 @@ import { CheckCircle, ArrowDown, Sparkles, Zap, Rocket } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 
 // Typewriter words - meaningful phrases that complete "אל תיתן למתחרים..."
-const TYPEWRITER_WORDS = ["לנצח אותך", "לעבור אותך", "לקחת לך לקוחות"];
+const TYPEWRITER_WORDS = ["לנצח אותך", "להשאיר אותך מאחור", "לקחת לך לקוחות"];
 
 export default function Hero() {
     const [mounted, setMounted] = useState(false);
