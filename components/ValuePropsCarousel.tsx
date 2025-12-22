@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, useMotionValue } from "framer-motion";
-import { Zap, Palette, Package, Search, MessageCircle, Target, ChevronRight, ChevronLeft } from "lucide-react";
+import { Zap, Palette, Package, Search, MessageCircle, Target, DollarSign, ChevronRight, ChevronLeft } from "lucide-react";
 
 const cards = [
     {
@@ -40,6 +40,12 @@ const cards = [
         title: "מכונת לידים",
         description: "האתר בנוי פסיכולוגית לגרום לאנשים ליצור קשר ולהפוך ללקוחות.",
         gradient: "from-rose-500 to-pink-500",
+    },
+    {
+        icon: DollarSign,
+        title: "מחיר הוגן",
+        description: "איכות של סוכנות גדולה במחיר שעסק קטן יכול להרשות לעצמו. ללא עלויות נסתרות.",
+        gradient: "from-emerald-500 to-teal-500",
     },
 ];
 
@@ -123,26 +129,26 @@ export default function ValuePropsCarousel() {
                         למה לבחור ב-<span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">SiteSprint</span>?
                     </motion.h2>
                     <p className="text-xl text-slate-400">
-                        6 סיבות שיגרמו לך לעבוד איתנו היום
+                        7 סיבות שיגרמו לך לעבוד איתנו היום
                     </p>
                 </div>
 
                 <div className="relative">
                     {/* Navigation Buttons */}
-                    <div className="absolute top-1/2 -translate-y-1/2 -right-4 z-10 hidden md:block">
+                    <div className="absolute top-1/2 -translate-y-1/2 right-0 md:-right-4 z-10">
                         <button
                             onClick={handlePrev}
-                            className="bg-white/5 backdrop-blur-sm hover:bg-white/10 text-white p-3 rounded-full border border-white/10 transition-all hover:scale-110"
+                            className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white p-2 md:p-3 rounded-full border border-white/20 transition-all hover:scale-110"
                         >
-                            <ChevronRight size={24} />
+                            <ChevronRight size={20} className="md:w-6 md:h-6" />
                         </button>
                     </div>
-                    <div className="absolute top-1/2 -translate-y-1/2 -left-4 z-10 hidden md:block">
+                    <div className="absolute top-1/2 -translate-y-1/2 left-0 md:-left-4 z-10">
                         <button
                             onClick={handleNext}
-                            className="bg-gradient-to-l from-cyan-500 to-blue-600 text-white p-3 rounded-full shadow-lg transition-all hover:scale-110"
+                            className="bg-gradient-to-l from-cyan-500 to-blue-600 text-white p-2 md:p-3 rounded-full shadow-lg transition-all hover:scale-110"
                         >
-                            <ChevronLeft size={24} />
+                            <ChevronLeft size={20} className="md:w-6 md:h-6" />
                         </button>
                     </div>
 
@@ -195,8 +201,8 @@ export default function ValuePropsCarousel() {
                                 key={idx}
                                 onClick={() => setImgIndex(idx)}
                                 className={`h-2 rounded-full transition-all duration-300 ${idx === imgIndex
-                                        ? "w-8 bg-gradient-to-r from-cyan-400 to-blue-600"
-                                        : "w-2 bg-white/20 hover:bg-white/40"
+                                    ? "w-8 bg-gradient-to-r from-cyan-400 to-blue-600"
+                                    : "w-2 bg-white/20 hover:bg-white/40"
                                     }`}
                             />
                         ))}
