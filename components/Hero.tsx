@@ -153,8 +153,9 @@ export default function Hero() {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed px-4"
                 >
-                    אנחנו בונים אתרים שממירים מבקרים ללקוחות.
-                    <span className="text-white font-semibold"> מהיר, מקצועי, ובמחיר הוגן.</span>
+                    <span className="hidden md:inline">אנחנו בונים אתרים שממירים מבקרים ללקוחות. </span>
+                    <span className="md:hidden">אתרים שמביאים לקוחות. </span>
+                    <span className="text-white font-semibold">מהיר, מקצועי, ובמחיר הוגן.</span>
                 </motion.p>
 
                 {/* CTA Buttons */}
@@ -187,12 +188,12 @@ export default function Hero() {
                     </motion.button>
                 </motion.div>
 
-                {/* Trust Indicators */}
+                {/* Trust Indicators - Hidden on mobile */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.5 }}
-                    className="flex flex-wrap justify-center gap-4 md:gap-8 text-slate-400 text-sm"
+                    className="hidden md:flex flex-wrap justify-center gap-4 md:gap-8 text-slate-400 text-sm"
                 >
                     {[
                         { icon: CheckCircle, text: "אתרים מותאמים למובייל" },
@@ -207,12 +208,12 @@ export default function Hero() {
                 </motion.div>
             </motion.div>
 
-            {/* Scroll Indicator */}
+            {/* Scroll Indicator - Hidden on mobile */}
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1 }}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+                className="hidden md:block absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
             >
                 <motion.button
                     onClick={scrollToPortfolio}
