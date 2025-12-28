@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Phone, Palette, Edit, Rocket, ArrowLeft } from "lucide-react";
+import { Phone, FileText, Palette, Edit, Rocket, ArrowLeft } from "lucide-react";
 
 const steps = [
     {
@@ -12,9 +12,16 @@ const steps = [
         color: "from-purple-500 to-indigo-600",
     },
     {
+        icon: FileText,
+        title: "שאלון מפורט",
+        description: "אתה ממלא שאלון עם כל הפרטים על העסק, תוכן, תמונות וסרטונים שתרצה באתר.",
+        duration: "בזמנך החופשי",
+        color: "from-pink-500 to-rose-600",
+    },
+    {
         icon: Palette,
         title: "עיצוב ופיתוח",
-        description: "אנחנו מעצבים ובונים את האתר בהתאם לזהות המותג שלך.",
+        description: "אנחנו מעצבים ובונים את האתר עם התוכן שלך בהתאם לזהות המותג.",
         duration: "3-5 ימי עבודה",
         color: "from-cyan-500 to-blue-600",
     },
@@ -80,15 +87,15 @@ export default function Process() {
                         </span>
                     </motion.h2>
                     <p className="text-xl text-slate-400">
-                        4 שלבים פשוטים מרעיון לאתר מוכן
+                        5 שלבים פשוטים מרעיון לאתר מוכן
                     </p>
                 </div>
 
                 <div className="relative">
                     {/* Connecting Line */}
-                    <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500/30 via-cyan-500/30 to-blue-500/30 transform -translate-y-1/2" />
+                    <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-500/30 via-cyan-500/30 to-blue-500/30 transform -translate-y-1/2" />
 
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative z-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 relative z-10">
                         {steps.map((step, index) => (
                             <motion.div
                                 key={index}
