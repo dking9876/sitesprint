@@ -21,8 +21,9 @@ const projects = [
         icon: Wrench,
         tagline: "אתר לשרברבים עם לחצן חירום",
         gradient: "from-blue-500 to-cyan-600",
-        link: "/examples/plumber",
+        link: "https://plumber-website-tau.vercel.app/",
         image: "/portfolio-plumber.png",
+        external: true,
     },
     {
         title: "אתר נחיתה לספרים",
@@ -88,8 +89,8 @@ export default function Portfolio() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {projects.map((project, index) => (
-                        <Link key={index} href={project.link}>
+                    {projects.map((project, index) => {
+                        const CardContent = (
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -129,8 +130,18 @@ export default function Portfolio() {
                                     </div>
                                 </div>
                             </motion.div>
-                        </Link>
-                    ))}
+                        );
+
+                        return project.external ? (
+                            <a key={index} href={project.link} target="_blank" rel="noopener noreferrer">
+                                {CardContent}
+                            </a>
+                        ) : (
+                            <Link key={index} href={project.link}>
+                                {CardContent}
+                            </Link>
+                        );
+                    })}
                 </div>
 
                 <div className="mt-16 text-center">
