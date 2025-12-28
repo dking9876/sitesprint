@@ -2,9 +2,15 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, useMotionValue } from "framer-motion";
-import { Zap, Palette, Package, Search, MessageCircle, Target, DollarSign, ChevronRight, ChevronLeft } from "lucide-react";
+import { Zap, Palette, Search, MessageCircle, Target, DollarSign, ChevronRight, ChevronLeft } from "lucide-react";
 
 const cards = [
+    {
+        icon: DollarSign,
+        title: "מחיר הוגן",
+        description: "איכות של סוכנות גדולה במחיר שעסק קטן יכול להרשות לעצמו. ללא עלויות נסתרות.",
+        gradient: "from-emerald-500 to-teal-500",
+    },
     {
         icon: Zap,
         title: "מהירות שיא",
@@ -16,12 +22,6 @@ const cards = [
         title: "עיצוב יוקרתי",
         description: "נראות של מותג גדול במחיר שמתאים לעסק קטן. עיצובים מודרניים ומקצועיים.",
         gradient: "from-purple-500 to-indigo-500",
-    },
-    {
-        icon: Package,
-        title: "הכל כלול",
-        description: "עיצוב, תוכן, פיתוח, אחסון ואבטחה. אנחנו מטפלים בהכל מא' עד ת'.",
-        gradient: "from-cyan-500 to-blue-500",
     },
     {
         icon: Search,
@@ -40,12 +40,6 @@ const cards = [
         title: "מכונת לידים",
         description: "האתר בנוי פסיכולוגית לגרום לאנשים ליצור קשר ולהפוך ללקוחות.",
         gradient: "from-rose-500 to-pink-500",
-    },
-    {
-        icon: DollarSign,
-        title: "מחיר הוגן",
-        description: "איכות של סוכנות גדולה במחיר שעסק קטן יכול להרשות לעצמו. ללא עלויות נסתרות.",
-        gradient: "from-emerald-500 to-teal-500",
     },
 ];
 
@@ -129,7 +123,7 @@ export default function ValuePropsCarousel() {
                         למה לבחור ב-<span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">SiteSprint</span>?
                     </motion.h2>
                     <p className="text-xl text-slate-400">
-                        7 סיבות שיגרמו לך לעבוד איתנו היום
+                        6 סיבות שיגרמו לך לעבוד איתנו היום
                     </p>
                 </div>
 

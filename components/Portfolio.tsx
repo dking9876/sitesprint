@@ -36,7 +36,7 @@ const projects = [
 ];
 
 export default function Portfolio() {
-    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "972XXXXXXXXX";
+    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "9720584345513";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("היי, אהבתי את תיק העבודות שלכם")}`;
 
     return (

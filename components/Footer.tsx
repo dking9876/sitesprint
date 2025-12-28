@@ -5,7 +5,7 @@ import { Facebook, Instagram, Linkedin, Youtube, Zap } from "lucide-react";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
-    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "972XXXXXXXXX";
+    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "9720584345513";
 
     return (
         <footer className="relative bg-[#020010] text-white pt-20 pb-10 overflow-hidden">

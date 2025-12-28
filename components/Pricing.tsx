@@ -62,7 +62,7 @@ const packages = [
 ];
 
 export default function Pricing() {
-    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "972XXXXXXXXX";
+    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "9720584345513";
 
     return (
         <section id="pricing" className="relative py-24 overflow-hidden">
@@ -125,8 +125,8 @@ export default function Pricing() {
                             )}
 
                             <div className={`relative h-full rounded-2xl border ${pkg.highlight
-                                    ? "border-cyan-500/50 bg-gradient-to-b from-white/10 to-white/5"
-                                    : "border-white/10 bg-white/5 hover:border-white/20"
+                                ? "border-cyan-500/50 bg-gradient-to-b from-white/10 to-white/5"
+                                : "border-white/10 bg-white/5 hover:border-white/20"
                                 } backdrop-blur-sm p-8 flex flex-col transition-all duration-300`}>
 
                                 {pkg.highlight && (
@@ -166,8 +166,8 @@ export default function Pricing() {
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
                                     className={`w-full py-4 rounded-full font-bold text-center transition-all duration-300 block ${pkg.highlight
-                                            ? "bg-gradient-to-r from-cyan-400 to-blue-600 text-white hover:shadow-lg hover:shadow-cyan-500/25"
-                                            : "bg-white/10 text-white border border-white/20 hover:bg-white/20"
+                                        ? "bg-gradient-to-r from-cyan-400 to-blue-600 text-white hover:shadow-lg hover:shadow-cyan-500/25"
+                                        : "bg-white/10 text-white border border-white/20 hover:bg-white/20"
                                         }`}
                                 >
                                     {pkg.cta}

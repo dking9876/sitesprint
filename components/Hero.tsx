@@ -13,7 +13,7 @@ export default function Hero() {
     const [displayText, setDisplayText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
 
-    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "972XXXXXXXXX";
+    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "9720584345513";
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("היי, אני רוצה אתר מנצח")}`;
     const containerRef = useRef<HTMLElement>(null);
 
