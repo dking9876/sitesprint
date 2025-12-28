@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Youtube, Zap } from "lucide-react";
+import { Zap } from "lucide-react";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
@@ -52,7 +52,7 @@ export default function Footer() {
                     <div>
                         <h4 className="text-lg font-bold mb-6 text-white">דברו איתנו</h4>
                         <ul className="space-y-4 text-slate-400">
-                            <li>✉️ info@sitesprint.co.il</li>
+                            <li>✉️ dwaitser@gmail.com</li>
                             <li>
                                 <a
                                     href={`https://wa.me/${whatsappNumber}`}
@@ -65,25 +65,6 @@ export default function Footer() {
                             </li>
                             <li>🕒 זמינים א'-ה' 09:00-18:00</li>
                         </ul>
-                    </div>
-
-                    {/* Column 4: Social */}
-                    <div>
-                        <h4 className="text-lg font-bold mb-6 text-white">עקבו אחרינו</h4>
-                        <div className="flex gap-3">
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-600 hover:border-blue-600 transition-all text-white">
-                                <Facebook size={18} />
-                            </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-gradient-to-br hover:from-purple-500 hover:to-pink-500 hover:border-pink-500 transition-all text-white">
-                                <Instagram size={18} />
-                            </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-700 hover:border-blue-700 transition-all text-white">
-                                <Linkedin size={18} />
-                            </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-red-600 hover:border-red-600 transition-all text-white">
-                                <Youtube size={18} />
-                            </a>
-                        </div>
                     </div>
 
                 </div>

@@ -12,7 +12,6 @@ const navItems = [
     { name: "דף הבית", href: "#" },
     { name: "אודות", href: "#about" },
     { name: "יתרונות", href: "#value-props" },
-    { name: "המלצות", href: "#testimonials" },
     { name: "תיק עבודות", href: "#portfolio" },
     { name: "התהליך", href: "#process" },
     { name: "מחירון", href: "#pricing" },
