@@ -22,10 +22,6 @@ const faqs = [
         answer: "100%. האתר שלך יראה ויעבוד מושלם על כל מכשיר. אנחנו בונים בגישת Mobile First כי רוב הלקוחות שלך יגיעו משם."
     },
     {
-        question: "כמה עולה תחזוקה חודשית?",
-        answer: "שנה ראשונה של אחסון ואבטחה כלולה במחיר! לאחר מכן, העלות היא החל מ-₪99 לחודש עבור אחסון, גיבויים, אבטחה ותמיכה טכנית."
-    },
-    {
         question: "האם אני יכול לערוך את האתר בעצמי?",
         answer: "כן! בחבילות המתקדמות אנחנו מספקים גישה למערכת ניהול תוכן (CMS) ומדריכים אותך איך להשתמש בה לעדכונים פשוטים."
     },
@@ -79,8 +75,8 @@ export default function FAQ() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.3, delay: index * 0.05 }}
                             className={`rounded-2xl border overflow-hidden transition-all duration-300 ${openIndex === index
-                                    ? "border-cyan-500/30 bg-white/10"
-                                    : "border-white/10 bg-white/5 hover:border-white/20"
+                                ? "border-cyan-500/30 bg-white/10"
+                                : "border-white/10 bg-white/5 hover:border-white/20"
                                 }`}
                         >
                             <button
