@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import StatsBar from "@/components/StatsBar";
 import About from "@/components/About";
 import ValuePropsCarousel from "@/components/ValuePropsCarousel";
-import Testimonials from "@/components/Testimonials";
 import Portfolio from "@/components/Portfolio";
 import Process from "@/components/Process";
 import Pricing from "@/components/Pricing";
@@ -20,7 +19,6 @@ export default function Home() {
       <StatsBar />
       <About />
       <ValuePropsCarousel />
-      <Testimonials />
       <Portfolio />
       <Process />
       <Pricing />
