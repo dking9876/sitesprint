@@ -13,10 +13,10 @@ const steps = [
     },
     {
         icon: FileText,
-        title: "שאלון מפורט",
-        description: "אתה ממלא שאלון עם כל הפרטים על העסק, תוכן, תמונות וסרטונים שתרצה באתר.",
-        duration: "בזמנך החופשי",
-        color: "from-pink-500 to-rose-600",
+        title: "שאלון קצר",
+        description: "שאלון פשוט שבו אתה מעלה את כל התוכן, התמונות והסרטונים לאתר.",
+        duration: "10 דקות",
+        color: "from-indigo-500 to-purple-600",
     },
     {
         icon: Palette,
