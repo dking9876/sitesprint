@@ -117,9 +117,7 @@ export default function Header() {
                     {/* LEFT: CTA Button (Desktop) */}
                     <div className="hidden md:block">
                         <a
-                            href={whatsappLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            href="tel:0584345513"
                             className="group relative overflow-hidden bg-gradient-to-l from-cyan-400 via-blue-500 to-purple-500 text-white font-semibold px-6 py-2.5 rounded-full hover:shadow-[0_0_30px_rgba(34,211,238,0.4)] hover:scale-105 transition-all duration-300 flex items-center gap-2"
                         >
                             <span className="relative z-10">שיחת ייעוץ חינם</span>
@@ -182,9 +180,7 @@ export default function Header() {
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: navItems.length * 0.1 }}
-                                    href={whatsappLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    href="tel:0584345513"
                                     className="mt-4 bg-gradient-to-l from-cyan-400 via-blue-500 to-purple-500 text-white font-bold text-xl px-8 py-4 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.3)]"
                                 >
                                     שיחת ייעוץ חינם 📞
