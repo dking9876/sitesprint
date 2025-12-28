@@ -78,9 +78,8 @@ export default function Portfolio() {
                         transition={{ duration: 0.6, delay: 0.1 }}
                         className="text-4xl md:text-5xl font-bold text-white mb-4"
                     >
-                        תיק עבודות{" "}
                         <span className="bg-gradient-to-l from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                            מרשים
+                            תיק עבודות
                         </span>
                     </motion.h2>
                     <p className="text-xl text-slate-400">
