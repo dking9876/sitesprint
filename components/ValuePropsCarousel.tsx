@@ -19,7 +19,7 @@ const cards = [
     },
     {
         icon: Palette,
-        title: "עיצוב יוקרתי",
+        title: "עיצוב מותאם אישית",
         description: "נראות של מותג גדול במחיר שמתאים לעסק קטן. עיצובים מודרניים ומקצועיים.",
         gradient: "from-purple-500 to-indigo-500",
     },
@@ -37,7 +37,7 @@ const cards = [
     },
     {
         icon: Target,
-        title: "מכונת לידים",
+        title: "מביא לקוחות",
         description: "האתר בנוי פסיכולוגית לגרום לאנשים ליצור קשר ולהפוך ללקוחות.",
         gradient: "from-rose-500 to-pink-500",
     },
