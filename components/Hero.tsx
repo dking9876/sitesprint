@@ -188,6 +188,19 @@ export default function Hero() {
                     </motion.button>
                 </motion.div>
 
+                {/* No Commitment Badge */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.4 }}
+                    className="flex justify-center mb-8"
+                >
+                    <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 backdrop-blur-sm rounded-full border border-cyan-500/30">
+                        <span className="text-cyan-400 text-lg">🛡️</span>
+                        <span className="text-white font-semibold text-sm md:text-base">לא משלמים עד שאתם מרוצים לגמרי</span>
+                    </div>
+                </motion.div>
+
                 {/* Trust Indicators - Hidden on mobile */}
                 <motion.div
                     initial={{ opacity: 0 }}
