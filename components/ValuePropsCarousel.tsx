@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, useMotionValue } from "framer-motion";
-import { Zap, Palette, Search, MessageCircle, Target, DollarSign, ChevronRight, ChevronLeft } from "lucide-react";
+import { Zap, Palette, Search, MessageCircle, Target, DollarSign, Shield, ChevronRight, ChevronLeft } from "lucide-react";
 
 const cards = [
     {
@@ -40,6 +40,12 @@ const cards = [
         title: "מביא לקוחות",
         description: "האתר בנוי פסיכולוגית לגרום לאנשים ליצור קשר ולהפוך ללקוחות.",
         gradient: "from-rose-500 to-pink-500",
+    },
+    {
+        icon: Shield,
+        title: "ללא התחייבות",
+        description: "רואה את האתר המוגמר לפני שאתה משלם. לא מרוצה? לא משלם.",
+        gradient: "from-cyan-500 to-blue-500",
     },
 ];
 
@@ -123,7 +129,7 @@ export default function ValuePropsCarousel() {
                         למה לבחור ב-<span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">SiteSprint</span>?
                     </motion.h2>
                     <p className="text-xl text-slate-400">
-                        6 סיבות שיגרמו לך לעבוד איתנו היום
+                        7 סיבות שיגרמו לך לעבוד איתנו היום
                     </p>
                 </div>
 

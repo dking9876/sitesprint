@@ -177,7 +177,35 @@ export default function Pricing() {
                     ))}
                 </div>
 
-                <div className="text-center mt-12 text-slate-500 text-sm">
+                {/* No Commitment Banner */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6 }}
+                    className="mt-12 max-w-3xl mx-auto"
+                >
+                    <div className="relative rounded-2xl border border-cyan-500/30 bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-purple-500/10 backdrop-blur-sm p-6 md:p-8">
+                        <div className="absolute -top-3 right-6">
+                            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 text-white text-sm font-bold px-4 py-1 rounded-full">
+                                🛡️ ללא התחייבות
+                            </span>
+                        </div>
+                        <div className="text-center">
+                            <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                                לא משלמים עד שאתם מרוצים לגמרי
+                            </h3>
+                            <p className="text-slate-300 text-lg leading-relaxed">
+                                אנחנו בונים לך את האתר ומראים לך את התוצאה הסופית.
+                                <br className="hidden md:block" />
+                                <span className="font-semibold text-cyan-400"> רק אחרי שתראה ותאשר - תשלם.</span>
+                                {" "}לא מרוצה? לא משלם כלום.
+                            </p>
+                        </div>
+                    </div>
+                </motion.div>
+
+                <div className="text-center mt-8 text-slate-500 text-sm">
                     * המחירים כוללים שנה ראשונה של אחסון ואבטחה. <br className="md:hidden" />
                     אפשרות לפריסת תשלומים נוחה.
                 </div>
