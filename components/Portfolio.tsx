@@ -32,8 +32,9 @@ const projects = [
         icon: Scissors,
         tagline: "דף נחיתה מעוצב להזמנת תורים",
         gradient: "from-amber-500 to-orange-600",
-        link: "/examples/barber",
+        link: "https://urban-cut-magic.vercel.app/",
         image: "/portfolio-barber.png",
+        external: true,
     },
 ];
 
