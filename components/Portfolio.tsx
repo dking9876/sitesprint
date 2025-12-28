@@ -12,8 +12,9 @@ const projects = [
         icon: Sparkles,
         tagline: "אתר אלגנטי עם מערכת זימון תורים",
         gradient: "from-pink-500 to-purple-600",
-        link: "/examples/cosmetician",
+        link: "https://luxebeauty-website.vercel.app/",
         image: "/portfolio-cosmetician.png",
+        external: true,
     },
     {
         title: "אינסטלציה מהירה",
