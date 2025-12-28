@@ -204,11 +204,6 @@ export default function Pricing() {
                         </div>
                     </div>
                 </motion.div>
-
-                <div className="text-center mt-8 text-slate-500 text-sm">
-                    * המחירים כוללים שנה ראשונה של אחסון ואבטחה. <br className="md:hidden" />
-                    אפשרות לפריסת תשלומים נוחה.
-                </div>
             </div>
         </section>
     );
